@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+    
+    <!-- Bootstrap CSS form CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
-    
-    <!-- Bootstrap CSS form CDN -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- fancybox css for the videos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
@@ -36,34 +36,27 @@
     
     <div class="header-area">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <h1><a>Music Lyrics Service</a></h1>
-
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>                     
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="#">Music Lyrics Service</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
                 </div>
-                
-                <div class="col-md-9">
-                    <div class="mainmenu">
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li id="current"><a href="index.html">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>                         
-                    </div>
-                </div>
-            </div>
+              </nav>
         </div>
     </div> 
     
@@ -95,14 +88,167 @@
         </div>
     </div> 
     
-
+    <!-- End slider area -->
+    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
     
     <div id="projects" class="section-padding">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
+                    <div class="page-title">
+                        <h2>What's Hot</h2>
+                    </div>
                 </div>
             </div>
+            
+            <!-- <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-project">
+                        <div class="project-preview">
+                            <a href=""><img src="assets/images/album1.png" class="img-responsive" alt=""></a>
+                            <div class="project-meta">
+                                <div class="project-date">
+                                    <p>July 22, 2019</p>
+                                </div>
+                                
+                                <div class="project-count">
+                                    <p><i class="fa fa-eye"></i> 308,439,180</p>
+                                    <p><i class="fa fa-comment"></i> 509,879</p>
+                                    <p><i class="fa fa-download"></i> 358,892,235</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-link">
+                            <h2><a href="">Señorita</a></h2>
+                            <p>Shawn Mendes, Camila Cabello</p>
+                            <a href="" class="project-detail"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-project">
+                        <div class="project-preview">
+                            <a href=""><img src="assets/images/album2.jpeg" class="img-responsive" alt=""></a>
+                            <div class="project-meta">
+                                <div class="project-date">
+                                    <p>July 22, 2019</p>
+                                </div>
+                                
+                                <div class="project-count">
+                                    <p><i class="fa fa-eye"></i> 434,031,171</p>
+                                    <p><i class="fa fa-comment"></i> 34,789,456</p>
+                                    <p><i class="fa fa-download"></i> 329,789,567</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-link">
+                            <h2><a href="">Beautiful People</a></h2>
+                            <p>Ed Sheeran Feat. Ed Sheeran</p>
+                            <a href="" class="project-detail"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-project">
+                        <div class="project-preview">
+                            <a href=""><img src="assets/images/album3.jpg" class="img-responsive" alt=""></a>
+                            <div class="project-meta">
+                                <div class="project-date">
+                                    <p>July 22, 2019</p>
+                                </div>
+                                
+                                <div class="project-count">
+                                    <p><i class="fa fa-eye"></i> 238</p>
+                                    <p><i class="fa fa-comment"></i> 20</p>
+                                    <p><i class="fa fa-download"></i> 128</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-link">
+                            <h2><a href="">How Do You Sleep?</a></h2>
+                            <p>Sam Smith</p>
+                            <a href="" class="project-detail"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-project">
+                        <div class="project-preview">
+                            <a href=""><img src="assets/images/album4.png" class="img-responsive" alt=""></a>
+                            <div class="project-meta">
+                                <div class="project-date">
+                                    <p>July 22, 2019</p>
+                                </div>
+                                
+                                <div class="project-count">
+                                    <p><i class="fa fa-eye"></i> 238</p>
+                                    <p><i class="fa fa-comment"></i> 20</p>
+                                    <p><i class="fa fa-download"></i> 128</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-link">
+                            <h2><a href="">Never Really Over</a></h2>
+                            <p>Katy Perry</p>
+                            <a href="" class="project-detail"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-project">
+                        <div class="project-preview">
+                            <a href=""><img src="assets/images/album5.jpg" class="img-responsive" alt=""></a>
+                            <div class="project-meta">
+                                <div class="project-date">
+                                    <p>July 22, 2019</p>
+                                </div>
+                                
+                                <div class="project-count">
+                                    <p><i class="fa fa-eye"></i> 238</p>
+                                    <p><i class="fa fa-comment"></i> 20</p>
+                                    <p><i class="fa fa-download"></i> 128</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-link">
+                            <h2><a href="">I.F.L.Y.</a></h2>
+                            <p>Bazzi</p>
+                            <a href="" class="project-detail"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-project">
+                        <div class="project-preview">
+                            <a href=""><img src="assets/images/album6.jpg" class="img-responsive" alt=""></a>
+                            <div class="project-meta">
+                                <div class="project-date">
+                                    <p>July 22, 2019</p>
+                                </div>
+                                
+                                <div class="project-count">
+                                    <p><i class="fa fa-eye"></i> 238</p>
+                                    <p><i class="fa fa-comment"></i> 20</p>
+                                    <p><i class="fa fa-download"></i> 128</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-link">
+                            <h2><a href="">Old Town Road</a></h2>
+                            <p>Lil Nas X</p>
+                            <a href="" class="project-detail"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div> <!-- End projects -->
     
     <div id="call-to-action" class="section-padding">
         <div class="container">
@@ -110,6 +256,8 @@
                 <div class="col-md-10">
                     <div class="cta-text">
                         <h2>Search Result</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iste tempora assumenda facilis beatae consectetur dolorem dolores, illo quisquam perferendis aliquam fuga, at est porro eos id rem modi libero!</p>
+                        <a href="" class="more-link">More Freebies <i class="fa fa-angle-right"></i></a> -->
                         <ul id="results"></ul>
                     </div>
                 </div>
@@ -121,8 +269,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div id="about">
-                        <h2>About MLS</h2>
+                    <div class="footer-left">
+                        <h2>Visit Our Shop</h2>
                         <div class="shop-content">
                             <img src="img/img-11.jpg" alt="">
                             <p>Grab some of our premium templates, icons, and graphics from our store. We strive to bring you the highest quality digital products. </p>
@@ -132,8 +280,8 @@
                 </div>
                 
                 <div class="col-md-6">
-                    <div id="contact">
-                        <h2>Contact</h2>
+                    <div class="latest-tweets">
+                        <h2>Latest tweets</h2>
                         <div id="tweet"></div>
                     </div>
                 </div>
@@ -147,21 +295,21 @@
                 <div class="col-md-4">
                     <div class="footer-menu">
                         <ul>
-                            <button class="btn"><i class="fa fa-home"></i><a href="#current">Go to Top</a></button>
+                            <li><a href="">Team</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div> <!-- End footer bottom -->
-
-    
-
-    <!-- jQuery form CDN -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
     
     <!-- Bootstrap JS form CDN -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- jQuery form CDN -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
 
     <!-- moment js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
