@@ -6,7 +6,6 @@ body {
     background-attachment: fixed;
 }
 
-
 .floatleft {float:left}
 .floatright {float:right}
 .alignleft {float:left;margin-right:15px;}
@@ -35,13 +34,21 @@ padding: 32px 15px;}
 
 .mainmenu .navbar-nav li:hover a {color: #fff;}
 
-.section-padding {padding: 100px 0;}
+.section-padding {padding: 100px 0}
 
-#slider {
+#slider{
   background: none repeat scroll #00104f;
   opacity: 0.9;
 }
-
+.navbar-brand{
+  font-size: 2em;
+}
+.navbar a, .navbar-brand{
+  color: #FFFFFF !important;
+}
+.bg-light{
+  background-color: #000000 !important;
+}
 h2 {
     color: white;
 }
@@ -271,6 +278,24 @@ a.read-more:hover {text-decoration: none}
 .copyright-text {
     margin-top: 12px;
     text-align: right;
+}
+
+
+
+#tweet ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#tweet li {
+    padding-left: 40px;
+    position: relative;margin-bottom: 30px;
+}
+#tweet li i.fa-twitter {
+    font-size: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
 }
 
 
