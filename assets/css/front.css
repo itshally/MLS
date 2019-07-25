@@ -14,7 +14,7 @@ html, body{
     width: 50%;
     /* z-index: 1; */
     padding: 0%;
-    border-left: 5px solid #FFFFFF;
+    border-left: 5px solid #6fb42a;
     
 }
 .intro-background{
@@ -23,7 +23,7 @@ html, body{
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 h1{
     color: #FFFFFF;
@@ -56,9 +56,9 @@ h4{
     height: 45px;
     /* position: relative; */
     position: absolute;
-    top: 83%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -83%);
+    transform: translate(-50%, -70%);
     display: inline-block;
   }
   /* hiding the actual checkbox */
@@ -107,9 +107,9 @@ h4{
   #on-label{
       color: #FFFFFF;
       position: absolute;
-      top: 95%;
+      top: 80%;
       left: 50%;
-      transform: translate(-50%, -95%);
+      transform: translate(-50%, -80%);
       font-size: 2em;
       background-color: #000000;
       padding: 10px;
