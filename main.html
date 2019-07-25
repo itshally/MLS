@@ -22,6 +22,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">    
     <link rel="stylesheet" href="assets/css/search-result.css">
+    
+    <!-- Voice system -->
+    <script src="assets/javascript/artyom.window.min.js"></script>
+    
 
     </head>
     
@@ -52,6 +56,12 @@
                       <form id="search-form" onsubmit="return searchMusic()">
                           <input type="searchbox" id="query" placeholder="Music Video" required>
                           <input type="submit" value="search" id="search-btn">
+                        
+                        <!-- voice recog slider toggle -->
+                        <label class="switch">
+                                <input type="checkbox" id="togBtn" value="false" name="disableYXLogo">
+                                <div class="slider round"></div>
+                        </label>
                       </form>
                   </div>
                 </div>
@@ -154,5 +164,11 @@
     
     <!-- custom css -->
     <script src="assets/javascript/main.js"></script>
+      
+     <!-- custom voice recog-->
+     <script src="assets/javascript/kendell.js"></script>
+     
+      
+     
     </body>
 </html>
