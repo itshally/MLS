@@ -3,7 +3,7 @@ html, body{
     margin: 0%;
     background-image: url('../images/background-home.jpg');
     background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;background-size: 100vw 100vh;
 }
 .intro-container{
     position: absolute;
@@ -14,7 +14,8 @@ html, body{
     width: 50%;
     /* z-index: 1; */
     padding: 0%;
-    border-left: 5px solid #FFFFFF;
+    border-left: 5px solid #6fb42a;
+    
 }
 .intro-background{
     position: absolute;
@@ -22,7 +23,7 @@ html, body{
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 h1{
     color: #FFFFFF;
@@ -113,4 +114,11 @@ h4{
       background-color: #000000;
       padding: 10px;
   }
-
+  @media screen and (max-width: 1024px){
+    .intro-container{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:90%;
+    }
+ }

@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+    
+    <!-- Bootstrap CSS form CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
-    
-    <!-- Bootstrap CSS form CDN -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- fancybox css for the videos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
     
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e57fa30f49.js"></script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -33,34 +36,29 @@
     
     <div class="header-area">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <h1><a href="">Music Lyrics Service</a></h1>
-
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>                     
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <h1 class="navbar-brand"><i class="fas fa-music"></i> Music Lyrics Service</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li> -->
+                  </ul>
+                  <div class="newsletter-form">
+                      <form id="search-form" onsubmit="return searchMusic()">
+                          <input type="searchbox" id="query" placeholder="Songs, Artists, Albums">
+                          <input type="submit" value="search" id="search-btn">
+                      </form>
+                  </div>
                 </div>
-                
-                <div class="col-md-9">
-                    <div class="mainmenu">
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="current"><a href="index.html">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>                         
-                    </div>
-                </div>
-            </div>
+              </nav>
         </div>
     </div> 
     
@@ -73,13 +71,6 @@
                     <div class="slider-text">
                         <h2>Free Music &amp; Lyrics</h2>
                         <p>High quality music resources, all for FREE!</p>
-
-                        <div class="newsletter-form">
-                            <form id="search-form" onsubmit="return searchMusic()">
-                                <input type="searchbox" id="query" placeholder="Songs, Artists, Albums">
-                                <input type="submit" value="search" id="search-btn">
-                            </form>
-                        </div>
                     </div>
                 </div>
                 
@@ -257,19 +248,20 @@
     <div id="call-to-action" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col">
                     <div class="cta-text">
                         <h2>Search Result</h2>
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iste tempora assumenda facilis beatae consectetur dolorem dolores, illo quisquam perferendis aliquam fuga, at est porro eos id rem modi libero!</p>
                         <a href="" class="more-link">More Freebies <i class="fa fa-angle-right"></i></a> -->
                         <ul id="results"></ul>
+                        <div id="buttons"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div> <!-- End call to action -->
     
-    <div id="footer-top" class="section-padding">
+    <!-- <div id="footer-top" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -291,7 +283,7 @@
                 </div>
             </div>
         </div>
-    </div> <!-- End footer top -->
+    </div> End footer top -->
     
     <div class="footer-area">
         <div class="container">
@@ -299,7 +291,7 @@
                 <div class="col-md-4">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="">Team</a></li>
+                            <li>&copy; 2019 Coffeehub</li>
                         </ul>
                     </div>
                 </div>
@@ -307,15 +299,19 @@
         </div>
     </div> <!-- End footer bottom -->
     
-
+    <!-- Bootstrap JS form CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
     <!-- jQuery form CDN -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
-    
-    <!-- Bootstrap JS form CDN -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <!-- moment js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    
+    <!-- fancybox js for the videos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
     
     <!-- custom css -->
     <script src="assets/javascript/main.js"></script>

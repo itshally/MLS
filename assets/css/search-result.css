@@ -1,0 +1,49 @@
+.cta-text{
+    width: 100%;
+    padding: 0px;
+    margin: 0%;
+}
+#results{
+    list-style: none;
+    display: inline;
+    margin: auto;
+    width: 100%;
+}
+#results li{
+    margin: auto;
+}
+.list-left{
+    float: left;
+    padding: 10px;
+    width: 50%;
+}
+.list-right{
+    float: right;
+    width: 50%;
+    margin: 10% auto;
+}
+#results a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#results a:hover{
+    color: #6fb42a;
+}
+#results p{
+    width: 60%;
+}
+.fancybox{
+    width: 500px;
+    height: auto;
+}
+
+#next-button{
+    float: right;
+    background-color: #8ACA4A;
+    width: 100px;
+} 
+#prev-button{
+    float: left;
+    background-color: #8ACA4A;
+    width: 100px;
+}
