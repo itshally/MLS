@@ -39,22 +39,10 @@ h4{
     padding: 2% 0px;
 }
 
-/*.switch-container {
-    /* position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -70%); */
-    /* padding: 10px 55px;
-    border-radius: 25px;
-    font-weight: bold; 
-}
-
-
 /* switch box / container */
 .switch-container{
     width: 100px;
     height: 45px;
-    /* position: relative; */
     position: absolute;
     top: 70%;
     left: 50%;
@@ -114,7 +102,9 @@ h4{
       background-color: #000000;
       padding: 10px;
   }
-  @media screen and (max-width: 1024px){
+
+
+@media screen and (max-width: 1024px){
     .intro-container{
     position: absolute;
     left:50%;
@@ -122,3 +112,119 @@ h4{
     width:90%;
     }
  }
+
+
+ @media only screen and (min-width: 992px) and (max-width: 1280px) { 
+  .intro-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .switch-container{
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    display: inline-block;
+  }
+  #on-label{
+    color: #FFFFFF;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 2em;
+    background-color: #000000;
+    padding: 10px;
+}
+  }
+  
+  
+  /* Tablet Layout: 768px. */
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .intro-container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+    }
+    .switch-container{
+      width: 100px;
+      height: 45px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -75%);
+      display: inline-block;
+    }
+    #on-label{
+      color: #FFFFFF;
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -85%);
+      font-size: 2em;
+      background-color: #000000;
+      padding: 10px;
+  }
+  }
+  
+  
+  
+  /* Mobile Layout: 320px. */
+  
+  @media only screen and (max-width: 767px) {
+    .intro-container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+      padding: 0%;
+  }
+  h1{
+      color: #FFFFFF;
+      margin: 2.5% 5%;
+      font-size: 3em;
+      padding: 2% 0px;
+  }
+  h4{
+      font-size: 1em;
+      width: 90%;
+  }
+  
+  /* switch box / container */
+  .switch-container{
+      width: 100px;
+      height: 45px;
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, 10%);
+      display: inline-block;
+    }
+    #on-label{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 5%);
+        font-size: 1.5em;
+        width: 90%;
+        text-align: center
+    }
+  
+  }
+  
+  
+  /* Wide Mobile Layout: 480px. */
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  
+  }
