@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
     
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e57fa30f49.js"></script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -37,7 +37,7 @@
     <div class="header-area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="#">Music Lyrics Service</a>
+                <h1 class="navbar-brand"><i class="fas fa-music"></i> Music Lyrics Service</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,16 +45,18 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                       <a class="nav-link" href="#">Link</a>
-                    </li>
+                    </li> -->
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+                  <div class="newsletter-form">
+                      <form id="search-form" onsubmit="return searchMusic()">
+                          <input type="searchbox" id="query" placeholder="Songs, Artists, Albums">
+                          <input type="submit" value="search" id="search-btn">
+                      </form>
+                  </div>
                 </div>
               </nav>
         </div>
@@ -69,13 +71,6 @@
                     <div class="slider-text">
                         <h2>Free Music &amp; Lyrics</h2>
                         <p>High quality music resources, all for FREE!</p>
-
-                        <div class="newsletter-form">
-                            <form id="search-form" onsubmit="return searchMusic()">
-                                <input type="searchbox" id="query" placeholder="Songs, Artists, Albums">
-                                <input type="submit" value="search" id="search-btn">
-                            </form>
-                        </div>
                     </div>
                 </div>
                 
@@ -253,19 +248,20 @@
     <div id="call-to-action" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col">
                     <div class="cta-text">
                         <h2>Search Result</h2>
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iste tempora assumenda facilis beatae consectetur dolorem dolores, illo quisquam perferendis aliquam fuga, at est porro eos id rem modi libero!</p>
                         <a href="" class="more-link">More Freebies <i class="fa fa-angle-right"></i></a> -->
                         <ul id="results"></ul>
+                        <div id="buttons"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div> <!-- End call to action -->
     
-    <div id="footer-top" class="section-padding">
+    <!-- <div id="footer-top" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -287,7 +283,7 @@
                 </div>
             </div>
         </div>
-    </div> <!-- End footer top -->
+    </div> End footer top -->
     
     <div class="footer-area">
         <div class="container">
@@ -295,7 +291,7 @@
                 <div class="col-md-4">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="">Team</a></li>
+                            <li>&copy; 2019 Coffeehub</li>
                         </ul>
                     </div>
                 </div>
