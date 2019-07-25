@@ -58,6 +58,9 @@ h2 {
 .slider-text {font-size: 16px;color: #fff;}
 .slider-text h2{font-size: 35px;font-weight: 700;margin-bottom: 30px}
 
+.slider-text .slider-text-p{
+  width: 100% !important;
+}
 .newsletter-form {margin: 0px 0px 0px 25px;} 
 .newsletter-form input[type=searchbox]{color: black; border: 1px solid #DADADA;padding: 10px;width: 300px;margin-right: 10px}
 .newsletter-form input[type=submit], #next-button, #prev-button{border: none;padding: 11px;color: #fff;text-transform: uppercase}
@@ -337,7 +340,6 @@ a, a.read-more:hover, a.read-more:hover i {color:#8ACA4A}
       width: 200px;
     }    
       .slider-text, .footer-left {margin-bottom: 30px}
-        
         
     .project-count p, .project-date p {padding: 10px}   
         
