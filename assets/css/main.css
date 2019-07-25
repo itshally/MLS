@@ -55,7 +55,7 @@ h2 {
 .slider-text {font-size: 16px;color: #fff;}
 .slider-text h2{font-size: 35px;font-weight: 700;margin-bottom: 30px}
 
-.newsletter-form {margin-top: 30px}
+.newsletter-form {margin-top: 0px}
 .newsletter-form input[type=searchbox]{color: black; border: 1px solid #DADADA;padding: 10px;width: 300px;margin-right: 10px}
 .newsletter-form input[type=submit]{border: none;padding: 11px;color: #fff;text-transform: uppercase}
 .newsletter-form input[type=submit]:hover{background-color: green}
