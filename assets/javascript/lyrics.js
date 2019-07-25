@@ -23,14 +23,35 @@ function searchLyrics(){
         
         //display result
         $('#results').html("<li>" +
-        "<div class='list-left'>" +
+        "<div class='list-left' style='width:120%;'>" +
           "<p> Name: " + output.artist.name + "</p><p> Song Title: " + output.track.name + "</p><p>" +
           output.track.text + "</p>"
         + "</div></li>");
       
     }
   )
+
+  $.get(
+    "https://www.googleapis.com/youtube/v3/search",{
+      part : 'snippet, id',
+      q : track,
+      type : 'video',
+      key : 'AIzaSyCRwSk1SS6LsbYiOh3b9HVZQhHfWI2QgGM'
+    },
+      function(result){
+        
+        console.log(result)
+        //display result
+        $('#music-video').html(
+        '<iframe width="100%" height="315" src="https://www.youtube.com/embed/' 
+        + result.items[0].id.videoId +
+        '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        );
+      }
+    )
+  
+      
+    
   $('#artist').val('');
   $('#track').val('');    
 }
-  
