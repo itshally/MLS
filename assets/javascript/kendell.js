@@ -10,7 +10,7 @@
 
             const artyom = new Artyom();
 
-            startContinuousArtyom();
+            
             // This function activates artyom and will listen all that you say forever (requires https conection, otherwise a dialog will request if you allow the use of the microphone)
             function startContinuousArtyom(){
                 artyom.fatality();// use this to stop any of
@@ -53,6 +53,7 @@
         $("#togBtn").on('change', function() {
             if ($(this).is(':checked')) {
                 switchStatus = $(this).is(':checked');
+                startContinuousArtyom();
                 UserDictation.start();
                 alert(switchStatus);// To verify
 
