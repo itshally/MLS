@@ -1,230 +1,112 @@
-html, body{
-    padding: 0%;
-    margin: 0%;
-    background-image: url('../images/background-home.jpg');
-    background-position: top;
-    background-repeat: no-repeat;background-size: 100vw 100vh;
+html,
+body {
+  padding: 0%;
+  margin: 0%;
 }
-.intro-container{
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-15%, -50%);
-    /*background-color: red;*/
-    width: 50%;
-    /* z-index: 1; */
-    padding: 0%;
-    border-left: 5px solid #6fb42a;
-    
+
+.intro-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 0;
+  border-left: 5px solid #6fb42a;
 }
-.intro-background{
-    position: absolute;
-    background-color: #000000;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.9;
+
+.intro-background {
+  position: absolute;
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
 }
-h1{
-    color: #FFFFFF;
-    margin: 2.5% 5%;
-    font-size: 5em;
-    padding: 2% 0px;
+
+hr {
+  background-color: #FFFFFF;
+  width: 90%;
+  margin-top: -3%;
 }
-h4{
-    color: #FFFFFF;
-    margin: -20px auto 20px 5%;
-    font-size: 1em;
-    width: 70%;
-    padding: 2% 0px;
+
+h1 {
+  color: #FFFFFF;
+  margin: 2.5% 5%;
+  font-size: 3rem;
+  padding: 2% 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h4 {
+  color: #FFFFFF;
+  margin: -20px auto 20px 5%;
+  font-size: 1.5rem;
+  width: 70%;
+  padding: 2% 0px;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.toggle-btn {
+  text-align: center;
 }
 
 /* switch box / container */
-.switch-container{
-    width: 100px;
-    height: 45px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    display: inline-block;
-  }
-  /* hiding the actual checkbox */
-  input{
-    display: inline-block;
-  }
-  /* the main switch */
-  .switch-button{
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: .4s;
-    cursor: pointer;
-    background-color: black;
-    
-  }
-  .switch-button:before{
-    content: "";
-    background-color: white;
-    height: 42px;
-    width: 42px;
-    left: 3px;
-    bottom: 2px;
-    position: absolute;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  input:checked + .switch-button {
-    background-color: limegreen;
-    color: white;
-  }
-  
-  input:focus + .switch-button {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  input:checked + .switch-button:before {
-    -webkit-transform: translateX(53px);
-    -ms-transform: translateX(53px);
-    transform: translateX(53px);
-  }
-  
-
-  #on-label{
-      color: #FFFFFF;
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      transform: translate(-50%, -80%);
-      font-size: 2em;
-      background-color: #000000;
-      padding: 10px;
-  }
-
-
-@media screen and (max-width: 1024px){
-    .intro-container{
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-    width:90%;
-    }
- }
-
-
- @media only screen and (min-width: 992px) and (max-width: 1280px) { 
-  .intro-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-  }
-  .switch-container{
-    width: 100px;
-    height: 45px;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -65%);
-    display: inline-block;
-  }
-  #on-label{
-    color: #FFFFFF;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    font-size: 2em;
-    background-color: #000000;
-    padding: 10px;
+.switch-container {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid limegreen;
 }
-  }
-  
-  
-  /* Tablet Layout: 768px. */
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .intro-container{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 95%;
-    }
-    .switch-container{
-      width: 100px;
-      height: 45px;
-      position: absolute;
-      top: 75%;
-      left: 50%;
-      transform: translate(-50%, -75%);
-      display: inline-block;
-    }
-    #on-label{
-      color: #FFFFFF;
-      position: absolute;
-      top: 85%;
-      left: 50%;
-      transform: translate(-50%, -85%);
-      font-size: 2em;
-      background-color: #000000;
-      padding: 10px;
-  }
-  }
-  
-  
-  
-  /* Mobile Layout: 320px. */
-  
-  @media only screen and (max-width: 767px) {
-    .intro-container{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 95%;
-      padding: 0%;
-  }
-  h1{
-      color: #FFFFFF;
-      margin: 2.5% 5%;
-      font-size: 3em;
-      padding: 2% 0px;
-  }
-  h4{
-      font-size: 1em;
-      width: 90%;
-  }
-  
-  /* switch box / container */
-  .switch-container{
-      width: 100px;
-      height: 45px;
-      position: absolute;
-      bottom: 10%;
-      left: 50%;
-      transform: translate(-50%, 10%);
-      display: inline-block;
-    }
-    #on-label{
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translate(-50%, 5%);
-        font-size: 1.5em;
-        width: 90%;
-        text-align: center
-    }
-  
-  }
-  
-  
-  /* Wide Mobile Layout: 480px. */
-  
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-  
-  
-  }
+
+/* the main switch */
+.switch-button {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  display: none;
+}
+
+.switch-button:before {
+  content: "";
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  left: 1px;
+  bottom: 3px;
+  position: absolute;
+  transition: .5s;
+  border-radius: 50%;
+}
+
+input:checked+.switch-button {
+  background-color: limegreen;
+  color: white;
+  border-radius: 20px;
+}
+
+input:focus+.switch-button {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.switch-button:before {
+  -webkit-transform: translateX(62px);
+  -ms-transform: translateX(62px);
+  transform: translateX(62px);
+}
+
+#on-label {
+  color: #FFFFFF;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 2em;
+  background-color: #000000;
+  padding: 10px;
+}
