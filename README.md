@@ -21,12 +21,9 @@ Who doesn't love music? You are not just entirely free to explore for any lyrics
 ---
 ## Team Members
 [@itshally](https://github.com/itshally)
-
-
 [@chloieeeramos](https://github.com/chloieeeramos)
-
-
 [@zcui1989](https://github.com/zcui1989)
-
-
 [@KendellJeffrey](https://github.com/KendellJeffrey)
+
+
+Live Demo [Here](https://itshally.github.io/MLS/)
