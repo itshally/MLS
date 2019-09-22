@@ -1,49 +1,69 @@
-.cta-text{
+.result-content {
+    height: auto;
     width: 100%;
-    padding: 0px;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
 }
-#results{
+
+.result-content h2 {
+    width: 100%;
+}
+
+.results {
     list-style: none;
-    display: inline;
     margin: auto;
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.results img {
+    width: 100%;
+    height: 90%;
+}
+
+.mv-info p {
     width: 100%;
 }
-#results li{
-    margin: auto;
-}
-.list-left{
-    float: left;
-    padding: 10px;
-    width: 50%;
-}
-.list-right{
-    float: right;
-    width: 50%;
-    margin: 10% auto;
-}
-#results a {
+
+.results a {
     text-decoration: none;
     color: #FFFFFF;
 }
-#results a:hover{
+
+.results a:hover {
     color: #6fb42a;
 }
-#results p{
+
+.results p {
     width: 60%;
 }
-.fancybox{
+
+.fancybox {
     width: 500px;
     height: auto;
 }
 
-#next-button{
+#next-button {
     float: right;
     background-color: #8ACA4A;
     width: 100px;
-} 
-#prev-button{
+    border: none;
+    padding: 5px;
+}
+
+#prev-button {
     float: left;
     background-color: #8ACA4A;
     width: 100px;
+    border: none;
+    padding: 5px;
+}
+
+#next-button:hover,
+#prev-button:hover {
+    background-color: #6fb42a;
+    border: 1px solid white;
 }

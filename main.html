@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MLS - MV</title>
-    
+
     <!-- Bootstrap CSS form CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -18,157 +20,92 @@
 
     <!-- fancybox css for the videos -->
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-    
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">    
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/search-result.css">
-    
+
     <!-- Voice system -->
     <script src="assets/javascript/artyom.window.min.js"></script>
     <script src="assets/javascript/kendell.js"></script>
-    
 
-    </head>
-    
-    <body>
-    
-    
-    <div class="header-area">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <h1 class="navbar-brand"><i class="fas fa-music"></i> Music Lyrics Service</h1>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="main.html"><i class="fas fa-video"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="lyrics.html"><i class="far fa-sticky-note"></i></a>
-                        </li>
-                    </ul>
-                  <div class="newsletter-form">
-                      <form id="search-form" onsubmit="return searchMusic()">
-                          <input type="searchbox" id="query" placeholder="Music Video" required>
-                          <input type="submit" value="search" id="search-btn">
-                        
-                        <!-- voice recog slider toggle -->
-                        <label class="switch">
-                                <input type="checkbox" id="togBtn" value="false" name="disableYXLogo">
-                                <div class="slider round"></div>
-                        </label>
-                      </form>
-                  </div>
-                </div>
-              </nav>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-music"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Music Videos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lyrics.html">Lyrics</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" id="search-form" onsubmit="return searchMusic()">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search music video..." aria-label="Search" id="query">
+                <button class="btn btn-outline-info my-2 my-sm-0" value="search" type="submit" id="search-btn">Search</button>
+            </form>
         </div>
-    </div> 
-    
-    <!-- End header area -->
-    
-    <div id="slider" class="section-padding">
-        <div class="container">
-            <div class="slider-text">
-                <h2>Free Music &amp; Lyrics</h2>
-                <p>High quality music resources, all for FREE!</p>
-                <p class="slider-text-p">Pellentesque sit amet vestibulum ligula, in euismod leo. 
-                    Nulla facilisis mi nec sagittis varius. Donec euismod libero eget odio 
-                    imperdiet fermentum. Proin elementum blandit ligula, dignissim lobortis 
-                    lorem dictum vitae. Quisque eget pulvinar ante, in eleifend nisl. Maecenas 
-                    sagittis dignissim aliquam. Ut eu lacus blandit, auctor augue vel, maximus 
-                    est. Maecenas pretium, augue id auctor scelerisque, magna ipsum sollicitudin 
-                    libero, eu euismod sapien purus id quam. In ac risus ac odio condimentum 
-                    maximus nec ac felis. Proin nec nunc porta, lacinia massa at, luctus quam. 
-                    Nulla nec magna sem. Mauris sit amet eros pulvinar, porttitor libero at, 
-                    volutpat nisi. Etiam vel purus in ante congue aliquam. Fusce pretium 
-                    accumsan leo, ac scelerisque dolor rhoncus nec. Nunc ipsum nulla, 
-                    aliquet vel pharetra nec, imperdiet consequat mi. In nec pulvinar odio.
-                </p>
-            </div>  
-        </div>
-    </div> 
-    
-    <!-- End slider area -->
-    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
-    
-    <div id="projects" class="section-padding">
-        <div class="container">
-            <h2>What's Hot</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="https://via.placeholder.com/250" alt="image placeholder">
-                    </div>
-                    
-                    <div class="col-3">
-                        <img src="https://via.placeholder.com/250" alt="image placeholder">
-                    </div>
-                    
-                    <div class="col-3">
-                        <img src="https://via.placeholder.com/250" alt="image placeholder">
-                    </div>
-                    
-                    <div class="col-3">
-                        <img src="https://via.placeholder.com/250" alt="image placeholder">
-                    </div>
-                </div>
+    </nav>
+
+    <!-- Search Result -->
+    <div class="result-container-bg"></div>
+    <div class="container-fluid result-container">
+        <div class="container result-content">
+            <h2>Search Result</h2>
+            <div class="row results" id="results">
+                <!-- results will appear here -->
             </div>
+            <div id="buttons"></div>
         </div>
-    </div> <!-- End projects -->
-    
-    <div id="call-to-action" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="cta-text">
-                        <h2>Search Result</h2>
-                        <ul id="results"></ul>
-                        <div id="buttons"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End call to action -->
-    
+    </div>
+
+    <!-- footer -->
     <div class="footer-area">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-menu">
-                        <ul>
-                            <li class = coffeehub style = "left:45%;">&copy; 2019 Coffeehub</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                <p>&copy; 2019 Coffeehub. Powered by Github</p>
         </div>
-    </div> <!-- End footer bottom -->
-    
+    </div>
+
     <!-- Bootstrap JS form CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
     <!-- jQuery form CDN -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
 
     <!-- fancybox js for the videos -->
     <script src="assets/javascript/jquery.fancybox.min.js"></script>
     <!-- moment js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
     <!-- custom css -->
     <script src="assets/javascript/main.js"></script>
-      
-  
-     
-      
-     
-    </body>
+
+
+
+
+
+</body>
+
 </html>

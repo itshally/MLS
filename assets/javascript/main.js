@@ -50,15 +50,18 @@ function searchMusic(){
       var channelTitle = item.snippet.channelTitle;
       var videoDate = item.snippet.publishedAt;
       
-      var output = "<li>" +
-      "<div class='list-left'>" +
-      "<img src='" + thumb + "'>" +
-      "</div>" +
-      "<div class='list-right'>" + 
-      "<h3><a data-fancybox href='http://www.youtube.com/embed/" + videoId + "'>" + title + "</a></h3>" + 
-      "<small>By <span class='cTitle'>" + channelTitle + "</span> on " + videoDate + "</small>" +
-      "<p>" + description + "</p>" +
-      "</div></li>" + "<div class='clearfix'></div>"
+      var output = `<div class="col-sm-12 col-md-6">
+                      <img src="${thumb}">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div class="mv-info">
+                        <h3><a data-fancybox href='http://www.youtube.com/embed/${videoId}'>${title}</a></h3> 
+                        <small>By <span class='cTitle'>${channelTitle }</span> on ${videoDate}</small>
+                        <p>${description}</p>
+                        <div class='clearfix'></div>
+                      </div>
+                    </div>
+                    `
       
       return output;
     }
@@ -174,16 +177,19 @@ function prevPage(){
     var channelTitle = item.snippet.channelTitle;
     var videoDate = item.snippet.publishedAt;
     
-    var output = "<li>" +
-    "<div class='list-left'>" +
-    "<img src='" + thumb + "'>" +
-    "</div>" +
-    "<div class='list-right'>" + 
-    "<h3><a data-fancybox href='http://www.youtube.com/embed/" + videoId + "'>" + title + "</a></h3>" + 
-    "<small>By <span class='cTitle'>" + channelTitle + "</span> on " + videoDate + "</small>" +
-    "<p>" + description + "</p>" +
-    "</div></li>" + "<div class='clearfix'></div>"
-    
+    var output = `<div class="col-sm-12 col-md-6">
+                      <img src="${thumb}">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div class="mv-info">
+                        <h3><a data-fancybox href='http://www.youtube.com/embed/${videoId}'>${title}</a></h3> 
+                        <small>By <span class='cTitle'>${channelTitle }</span> on ${videoDate}</small>
+                        <p>${description}</p>
+                        <div class='clearfix'></div>
+                      </div>
+                    </div>
+                    `
+
     return output;
   }
   $('#query').val('');
