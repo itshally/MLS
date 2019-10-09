@@ -79,6 +79,7 @@ git clone https://github.com/itshally/MLS.git
 
 Then, type the code to run the project:
 ```bash
+cd MLS
 start index.html
 ```
 
